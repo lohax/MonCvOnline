@@ -22,7 +22,13 @@ const Header = ({ data }) => (
               dangerouslySetInnerHTML={{
                 __html: data.description.childMarkdownRemark.html
               }}
-            />
+              
+             />
+            <div
+              dangerouslySetInnerHTML={{
+                __html: data.moreDescription.childMarkdownRemark.html
+              }}
+             />
             <ul className="details">
               <li>
                 <strong>Nom</strong>
@@ -42,6 +48,11 @@ const Header = ({ data }) => (
                   <a href={`mailto:${data.gmail}`}>{data.gmail}</a>
                 </p>
               </li>
+              <li>
+                <strong>CV</strong>
+                <p><a href={data.cv}>{data.cv}</a></p>
+              </li>
+
             </ul>
             <div className="socials">
               <ul>
