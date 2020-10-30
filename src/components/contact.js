@@ -16,12 +16,12 @@ export default class Contact extends Component {
           >
             <div>
               <label>
-                Your Name: <input type="text" name="name" required />
+                Nom : <input type="text" name="name" required />
               </label>
             </div>
             <div>
               <label>
-                Your Email: <input type="email" name="email" required />
+                Email: <input type="email" name="email" required />
               </label>
             </div>
             <div>
@@ -30,7 +30,7 @@ export default class Contact extends Component {
               </label>
             </div>
             <div>
-              <button type="submit">Send</button>
+              <button type="submit">Envoyer</button>
             </div>
           </form>
         </div>

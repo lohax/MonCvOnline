@@ -2,11 +2,8 @@ import { Link } from "gatsby";
 import React, { Component } from "react";
 
 export default class Header extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      menu: false
-    };
+  state = {
+    menu: false
   }
 
   render() {
@@ -21,8 +18,8 @@ export default class Header extends Component {
                 {data.logo.file.url ? (
                   <img src={data.logo.file.url} alt="logo" />
                 ) : (
-                  <span>{data.siteName}</span>
-                )}
+                    <span>{data.siteName}</span>
+                  )}
               </Link>
             </div>
             <div
@@ -45,14 +42,14 @@ export default class Header extends Component {
                   }}
                 >
                   <li>
-                    <Link to="/#home">Home</Link>
+                    <Link to="/#home">Accueil</Link>
                   </li>
                   {data.menus
                     .filter(item => item === "About")
                     .map(t => {
                       return (
                         <li>
-                          <Link to={`/#About`}>About</Link>
+                          <Link to={`/#About`}>Présentation</Link>
                         </li>
                       );
                     })}
@@ -61,7 +58,7 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                          <Link to={`/#Service`}>Service</Link>
+                          <Link to={`/#Service`}>Parcours professionnel</Link>
                         </li>
                       );
                     })}
@@ -70,7 +67,7 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                          <Link to={`/#Blogs`}>Blogs</Link>
+                          <Link to={`/#Blogs`}>Stages</Link>
                         </li>
                       );
                     })}
@@ -80,25 +77,25 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                          <Link to={`/#Work`}>Work</Link>
+                          <Link to={`/#Work`}>Formation & Diplômes</Link>
                         </li>
                       );
                     })}
-                  {data.menus
+                  {/* {data.menus
                     .filter(item => item === "Testimonials")
                     .map(t => {
                       return (
                         <li>
-                          <Link to={`/#Testimonials`}>Testimonials</Link>
+                          <Link to={`/#Testimonials`}>Compétences</Link>
                         </li>
                       );
-                    })}
+                    })} */}
                   {data.menus
                     .filter(item => item === "Photos")
                     .map(t => {
                       return (
                         <li>
-                          <Link to={`/#Photos`}>Photos</Link>
+                          <Link to={`/#Photos`}>Compétences</Link>
                         </li>
                       );
                     })}
@@ -114,38 +111,38 @@ export default class Header extends Component {
                 </ul>
               </div>
             ) : (
-              <div className="menu">
-                <ul
-                  onClick={() => {
-                    this.setState({
-                      menu: false
-                    });
-                  }}
-                >
-                  <li>
-                    <Link to="/#home">Home</Link>
-                  </li>
-                  {data.menus
-                    .filter(item => item === "Blogs")
-                    .map(t => {
-                      return (
-                        <li>
-                          <Link to="/blogs">Blogs</Link>
-                        </li>
-                      );
-                    })}
-                  {data.menus
-                    .filter(item => item === "Photos")
-                    .map(t => {
-                      return (
-                        <li>
-                          <Link to="/photos">Photos</Link>
-                        </li>
-                      );
-                    })}
-                </ul>
-              </div>
-            )}
+                <div className="menu">
+                  <ul
+                    onClick={() => {
+                      this.setState({
+                        menu: false
+                      });
+                    }}
+                  >
+                    <li>
+                      <Link to="/#home">Accueil</Link>
+                    </li>
+                    {data.menus
+                      .filter(item => item === "Blogs")
+                      .map(t => {
+                        return (
+                          <li>
+                            <Link to="/blogs">Blogs</Link>
+                          </li>
+                        );
+                      })}
+                    {data.menus
+                      .filter(item => item === "Photos")
+                      .map(t => {
+                        return (
+                          <li>
+                            <Link to="/photos">Photos</Link>
+                          </li>
+                        );
+                      })}
+                  </ul>
+                </div>
+              )}
           </div>
         </div>
       </header>

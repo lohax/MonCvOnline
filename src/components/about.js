@@ -14,9 +14,9 @@ const Header = ({ data }) => (
         </div>
         <div className="left col-md-7 col-lg-8">
           <div className="about-details">
-            <span className="name">My Name is {data.name}.</span>
+            <span className="name">Je m'appelle {data.name}.</span>
             <h2 className="sub-position">
-              I'm a Professional {data.designation}.
+              Je suis {data.designation}.
             </h2>
             <div
               dangerouslySetInnerHTML={{
@@ -25,15 +25,15 @@ const Header = ({ data }) => (
             />
             <ul className="details">
               <li>
-                <strong>Full Name</strong>
+                <strong>Nom</strong>
                 <p>{data.name}</p>
               </li>
               <li>
                 <strong>Age</strong>
-                <p>{data.age} Years</p>
+                <p>{data.age} ans</p>
               </li>
               <li>
-                <strong>Location</strong>
+                <strong>Localisation</strong>
                 <p>{data.location}</p>
               </li>
               <li>
@@ -45,30 +45,6 @@ const Header = ({ data }) => (
             </ul>
             <div className="socials">
               <ul>
-                <li>
-                  <a
-                    className="fab fa-facebook-f"
-                    href={data.facebook}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    className="fab fa-twitter"
-                    href={data.twitter}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    className="fab fa-instagram"
-                    href={data.instagram}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  ></a>
-                </li>
                 <li>
                   <a
                     className="fab fa-linkedin-in"
