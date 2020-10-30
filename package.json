@@ -1,9 +1,9 @@
 {
-  "name": "rohit-gupta",
+  "name": "loic-chambost",
   "private": true,
   "description": "A simple starter to get up and developing quickly with Gatsby",
   "version": "0.1.0",
-  "author": "Rohit Gupta <rohitguptab33@gmail.com>",
+  "author": "loic chambost",
   "dependencies": {
     "bootstrap": "^4.4.1",
     "disqus-react": "^1.0.7",
@@ -45,9 +45,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rohitguptab/rg-portfolio"
+    "url": "https://github.com/lohax/MonCvOnline"
   },
   "bugs": {
-    "url": "https://github.com/rohitguptab/rg-portfolio/issues"
+    "url": "https://github.com/lohax/MonCvOnline/issues"
   }
 }
