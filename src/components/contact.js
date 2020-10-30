@@ -2,10 +2,13 @@ import React, { Component } from "react";
 
 export default class Contact extends Component {
 
-  submitForm = this.submitForm.bind(this);
-  state = {
-    status: ""
-  };
+  constructor(props) {
+    super(props);
+    this.submitForm = this.submitForm.bind(this);
+    this.state = {
+      status: ""
+    };
+  }
 
   render() {
     return (
@@ -21,24 +24,18 @@ export default class Contact extends Component {
             data-netlify="true"
             data-netlify-honeypot="bot"
             onSubmit={this.submitForm}
+
           >
             <div>
-              <label>
-                Nom : <input type="text" name="name" required />
-              </label>
+              <input type="text" name="name" required placeholder="Nom" />
             </div>
             <div>
-              <label>
-                Email: <input type="email" name="email" required />
-              </label>
+              <input type="email" name="email" required placeholder="Email" />
             </div>
             <div>
-              <label>
-                Message: <textarea name="message" required></textarea>
-              </label>
+              <textarea name="message" required placeholder="Message" ></textarea>
             </div>
             <div>
-              
               {this.status === "SUCCESS" ? <p>Merci!</p> : <button type="submit">Envoyer</button>}
               {this.status === "ERROR" && <p>Ooops! Une erreur est survenue.</p>}
 
