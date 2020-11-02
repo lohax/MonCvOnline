@@ -1,6 +1,20 @@
 import React from "react";
 import Img from "gatsby-image";
 
+// const bd = '17/03/1984';
+// const calculate_age = (bd) => {
+//   var today = new Date();
+//   var birthDate = new Date(bd);  // create a date object directly from `dob1` argument
+//   var age_now = today.getFullYear() - birthDate.getFullYear();
+//   var m = today.getMonth() - birthDate.getMonth();
+//   if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) 
+//   {
+//       age_now--;
+//   }
+//   console.log(age_now);
+//   return age_now;
+// }
+
 const Header = ({ data }) => (
   <div className="about section" id="About">
     <div className="container">
@@ -18,7 +32,7 @@ const Header = ({ data }) => (
             <h2 className="sub-position">
               Je suis {data.designation}.
             </h2>
-            <div
+            <div style={{color: '#E36D0B', fontWeight : 'bold'}}
               dangerouslySetInnerHTML={{
                 __html: data.description.childMarkdownRemark.html
               }}
@@ -35,7 +49,7 @@ const Header = ({ data }) => (
                 <p>{data.name}</p>
               </li>
               <li>
-                <strong>Age</strong>
+                <strong>Âge</strong>
                 <p>{data.age} ans</p>
               </li>
               <li>
@@ -50,7 +64,7 @@ const Header = ({ data }) => (
               </li>
               <li>
                 <strong>CV</strong>
-                <p><a href={data.cv}>{data.cv}</a></p>
+                <p><a href="//assets.ctfassets.net/fhp5aho9vq9w/6H3iameCFSUJyJmJ9o7Hjv/fed4d8b211331193fbca5b2b7e2ffb17/monCV.pdf">monCV.pdf</a></p>
               </li>
 
             </ul>

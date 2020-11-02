@@ -54,24 +54,14 @@ export default class Header extends Component {
                       );
                     })}
                   {data.menus
-                    .filter(item => item === "Service")
+                    .filter(item => item === "Timeline")
                     .map(t => {
                       return (
                         <li>
-                          <Link to={`/#Service`}>Parcours professionnel</Link>
+                          <Link to={`/#Timeline`}>Parcours professionnel</Link>
                         </li>
                       );
                     })}
-                  {/* {data.menus
-                    .filter(item => item === "Blogs")
-                    .map(t => {
-                      return (
-                        <li>
-                          <Link to={`/#Blogs`}>Stages</Link>
-                        </li>
-                      );
-                    })} */}
-
                   {data.menus
                     .filter(item => item === "Work")
                     .map(t => {
@@ -122,15 +112,7 @@ export default class Header extends Component {
                     <li>
                       <Link to="/#home">Accueil</Link>
                     </li>
-                    {data.menus
-                      .filter(item => item === "Blogs")
-                      .map(t => {
-                        return (
-                          <li>
-                            <Link to="/blogs">Blogs</Link>
-                          </li>
-                        );
-                      })}
+
                     {data.menus
                       .filter(item => item === "Photos")
                       .map(t => {

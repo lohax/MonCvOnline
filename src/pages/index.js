@@ -8,10 +8,10 @@ import Banner from "../components/banner";
 import About from "../components/about";
 import Service from "../components/service";
 import Work from "../components/work";
-import Blogs from "../components/blogs";
 import Testimonial from "../components/testimonial";
 import Contact from "../components/contact";
 import Photos from "../components/photos";
+import Timeline from"../components/Timeline"
 
 const IndexPage = ({ data }) => (
   <Layout header="home">
@@ -28,15 +28,15 @@ const IndexPage = ({ data }) => (
       })}
 
     {data.contentfulSiteInformation.menus
-      .filter(item => item === "Service")
+      .filter(item => item === "Timeline")
       .map(t => {
-        return <Service data={data.allContentfulService}></Service>;
+        return <Timeline data={data.allContentfulTimeline}></Timeline>;
       })}
 
     {data.contentfulSiteInformation.menus
-      .filter(item => item === "Blogs")
+      .filter(item => item === "Service")
       .map(t => {
-        return <Blogs data={data.allContentfulBlogs}></Blogs>;
+        return <Service data={data.allContentfulService}></Service>;
       })}
 
     {data.contentfulSiteInformation.menus
@@ -102,6 +102,18 @@ export const pageQuery = graphql`
           html
         }
       }
+      moreDescription {
+        childMarkdownRemark {
+          html
+        }
+      }
+      cv {
+        file {
+          url
+          fileName
+          contentType
+        }
+      }
       bannerImage {
         fluid(maxWidth: 1500) {
           base64
@@ -124,26 +136,6 @@ export const pageQuery = graphql`
               html
             }
           }
-        }
-      }
-    }
-    allContentfulBlogs(limit: 5, sort: {fields: createdAt, order: DESC}) {
-      edges {
-        node {
-          title
-          slug
-          featureImage {
-            fluid(maxWidth: 600) {
-              base64
-              aspectRatio
-              src
-              srcSet
-              srcWebp
-              srcSetWebp
-              sizes
-            }
-          }
-          createdAt
         }
       }
     }
@@ -205,6 +197,19 @@ export const pageQuery = graphql`
     }
     contentfulSiteInformation {
       menus
-    }
+    },
+  #   contentfulTimeline {
+  #   id
+  #   title
+  #   contentTitle
+  #   contentText {
+  #     id
+  #     contentText
+  #   }
+  #   contentDetailedText {
+  #     id
+  #     contentDetailedText
+  #   }
+  # }
   }
 `;
