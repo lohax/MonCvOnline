@@ -226,7 +226,23 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
 .timeline {
     font-family: sans-serif;
     text-align: center;
-  }
+}
+.timeline-item-title{
+    color: white !important;
+    background: #343436;
+} 
 .timeline-item-title.active{
     color: white !important;
 } 
+.timeline-card-content.active{
+    
+    border: 2px #343436 solid;
+}
+.timeline-card-content{
+    /* background:  #f7f7f7 !important; */
+}
+.card-title{
+    color: #E36D0B !important;
+}
+
+

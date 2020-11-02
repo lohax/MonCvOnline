@@ -62,15 +62,6 @@ export default class Header extends Component {
                         </li>
                       );
                     })}
-                  {data.menus
-                    .filter(item => item === "Work")
-                    .map(t => {
-                      return (
-                        <li>
-                          <Link to={`/#Work`}>Formation</Link>
-                        </li>
-                      );
-                    })}
                   {/* {data.menus
                     .filter(item => item === "Testimonials")
                     .map(t => {
@@ -81,11 +72,20 @@ export default class Header extends Component {
                       );
                     })} */}
                   {data.menus
-                    .filter(item => item === "Photos")
+                    .filter(item => item === "Service")
                     .map(t => {
                       return (
                         <li>
-                          <Link to={`/#Photos`}>Compétences</Link>
+                          <Link to={`/#Service`}>Compétences</Link>
+                        </li>
+                      );
+                    })}
+                  {data.menus
+                    .filter(item => item === "Work")
+                    .map(t => {
+                      return (
+                        <li>
+                          <Link to={`/#Work`}>Portfolio</Link>
                         </li>
                       );
                     })}

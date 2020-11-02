@@ -45,13 +45,13 @@ const IndexPage = ({ data }) => (
         return <Work data={data.allContentfulWorks}></Work>;
       })}
 
-    {data.contentfulSiteInformation.menus
+    {/* {data.contentfulSiteInformation.menus
       .filter(item => item === "Testimonials")
       .map(t => {
         return (
           <Testimonial data={data.allContentfulTestimonials}></Testimonial>
         );
-      })}
+      })} */}
 
     {data.contentfulSiteInformation.menus
       .filter(item => item === "Photos")
