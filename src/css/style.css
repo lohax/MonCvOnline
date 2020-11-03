@@ -1,5 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,600,700,700i&display=swap');
-*{font-family:'Josefin Sans',sans-serif}
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,400i,600,700,700i&display=swap');
+*{font-family:'Ubuntu',sans-serif}
+
+/* @import url('https://fonts.googleapis.com/css?family=roboto+Sans:300,400,400i,600,700,700i&display=swap');
+*{font-family:'roboto Sans',sans-serif} */
+
+/* @import url('https://fonts.googleapis.com/css?family=lato+Sans:300,400,400i,600,700,700i&display=swap');
+*{font-family:'lato Sans',sans-serif} */
+
+/* @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i,600,700,700i&display=swap');
+*{font-family:'Josefin Sans',sans-serif} */
+
+
+
 img{max-width:100%}
 .site-header{background:#e36d0b;position:fixed;top:0;left:0;right:0;z-index:999;padding:0px 0}
 .site-header *{color:#fff}
@@ -108,7 +121,7 @@ h2:after,
 .work-list{display:flex;flex-wrap:wrap;list-style:none;padding:0;margin:0 -5px}
 .work-list .item{width:33.33%;padding:0 5px;margin-bottom:10px}
 .testimonials .slick-list *{outline:none!important}
-.site-footer{padding:20px;background:#333;margin-bottom:10px;text-align:center;color:#fff}
+.site-footer{padding:8px;background:#333;margin-bottom:10px;color:#fff}
 .slick-list{overflow:hidden}
 .blogs-list .item .inner .gatsby-image-wrapper{width:100%;height:250px}
 .blogs-list .item:nth-child(1) .inner .gatsby-image-wrapper,
@@ -223,6 +236,11 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
 @media only screen and (max-width:480px){
     .about-main .left .gatsby-image-wrapper{height:400px}
 }
+
+/* Custom */
+
+.hello{color: #A4E02A !important; font-size: x-large;}
+.welcomePopup{color: #343436 !important; font-size: larger;}
 .timeline {
     font-family: sans-serif;
     text-align: center;
@@ -238,11 +256,20 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
     
     border: 2px #343436 solid;
 }
-.timeline-card-content{
-    /* background:  #f7f7f7 !important; */
-}
 .card-title{
     color: #E36D0B !important;
+}
+.js-focus-visible .focus-visible {
+    outline: none !important;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content : space-between;
+}
+.footer-r{
+
 }
 
 

@@ -8,13 +8,16 @@ const items = [
       },
       {
         title: "2009-2010",
-        cardTitle: "Création d’une entreprise individuelle «WebComs». ",
-        cardSubtitle: `Conception web et print pour divers clients.`,
-        cardDetailedText: ``
+        cardTitle: "Indépendant - Création d’une entreprise individuelle «WebComs». ",
+        cardSubtitle: `Conception web et print.`,
+        cardDetailedText: `-Création de sites vitrine et e-commerce proposant la gestion par les clients (CMS Joomla)
+        -Visites virtuelles
+        -Conception d'identité graphique
+        -Impressions carte de visite, flyers, etc.`
       },
       {
         title: "2008",
-        cardTitle: "Portage salarial avec Calleo Portage.",
+        cardTitle: "Indépendant - Portage salarial avec Calleo Portage.",
         cardSubtitle: `Conception Web via le CMS Joomla!`,
         cardDetailedText: ``
       },
@@ -28,32 +31,36 @@ const items = [
         title: "2006-2007",
         cardTitle: "Formation Euromaster Multimedia à St Étienne (France) ",
         cardSubtitle: ``,
-        cardDetailedText: `Apprentissage des techniques de conception de site internet par le 
-        développement et l’utilisation de CMS (Joomla!). Formation Photoshop et montage vidéo (Création d'un clip).`
+        cardDetailedText: `Apprentissage des techniques de conception de site internet par le développement et l’utilisation de CMS (Joomla!). 
+        Formation Photoshop et montage vidéo (Création d'un clip).`
       },
       {
         title: "2000-2007",
         cardTitle: "Intérim & Emploi saisonnier (france) ",
-        cardSubtitle: ``,
-        cardDetailedText: `Nexter System : Cariste et conditionnement de matériels militaires,
-        O.T.C : Cariste et manutentionnaire,
-        Sicarev : Manutentionnaire,
-        Dessert & Co : Plongeur,
-        Patisserie/Chocolaterie Pralus : Livreur et manutentionnaire,
-        Eyraud Plant : Horticulture,
-        Lyon Sport Loisir : Moniteur en colonie de Vacances`
+        // cardSubtitle: `"Parce que cela fait aussi partie de ma vie, avant d'avoir découvert l'univers du développement."`,
+        cardSubtitle: `"En vérité, le chemin importe peu, la volonté d'arriver suffit à tout. Albert Camus"`,
+        cardDetailedText: `Nexter System : Cariste et conditionnement de matériels militaires
+         / O.T.C : Cariste et manutentionnaire
+         / Sicarev : Manutentionnaire
+         / Dessert & Co : Plongeur
+         / Patisserie/Chocolaterie Pralus : Livreur et manutentionnaire
+         / Eyraud Plant : Horticulture
+         / Lyon Sport Loisir : Moniteur en colonie de Vacances`
       },
       {
         title: "2002-2004",
         cardTitle: "Baccalauréat sciences médico-sociales - Roanne (France)",
         cardSubtitle: ``,
-        cardDetailedText: `Institut Médico-Educatif et de Rééducation «le Phénix» à Roanne`
+        cardDetailedText: `Stages : Institut Médico-Educatif et de Rééducation «le Phénix» à Roanne`
       },
       {
         title: "2000-2002",
         cardTitle: "Brevet d'étude professionnel carrières sanitaires et sociales - Le Coteau (France)",
         cardSubtitle: ``,
-        cardDetailedText: `Centre de rééducation à Karlstad (Suède), Centre social «Détente et loisirs» à le Coteau, Maison de retraite du parc à Le Coteau, Ecole maternelle St Marc à Le Coteau`
+        cardDetailedText: `Stages : Centre de rééducation à Karlstad (Suède) 
+        / Centre social «Détente et loisirs» à le Coteau 
+        / Maison de retraite du parc à Le Coteau 
+        / Ecole maternelle St Marc à Le Coteau`
       }
   ];
 

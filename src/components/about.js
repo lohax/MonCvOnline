@@ -1,19 +1,16 @@
 import React from "react";
 import Img from "gatsby-image";
 
-// const bd = '17/03/1984';
-// const calculate_age = (bd) => {
-//   var today = new Date();
-//   var birthDate = new Date(bd);  // create a date object directly from `dob1` argument
-//   var age_now = today.getFullYear() - birthDate.getFullYear();
-//   var m = today.getMonth() - birthDate.getMonth();
-//   if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) 
-//   {
-//       age_now--;
-//   }
-//   console.log(age_now);
-//   return age_now;
-// }
+const calculate_age = (bd) => {
+  var today = new Date();
+  var birthDate = new Date(bd);  
+  var age_now = today.getFullYear() - birthDate.getFullYear();
+  var m = today.getMonth() - birthDate.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+      age_now--;
+  }
+  return age_now;
+}
 
 const Header = ({ data }) => (
   <div className="about section" id="About">
@@ -50,7 +47,7 @@ const Header = ({ data }) => (
               </li>
               <li>
                 <strong>Âge</strong>
-                <p>{data.age} ans</p>
+                <p>{calculate_age('1984-03-17')} ans</p>
               </li>
               <li>
                 <strong>Localisation</strong>
