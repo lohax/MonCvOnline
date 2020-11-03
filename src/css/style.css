@@ -239,7 +239,7 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
 
 /* Custom */
 
-.hello{color: #A4E02A !important; font-size: x-large;}
+.hello{font-size: xx-large; cursor: pointer;}
 .welcomePopup{color: #343436 !important; font-size: larger;}
 .timeline {
     font-family: sans-serif;
@@ -268,8 +268,29 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
     flex-wrap: wrap;
     justify-content : space-between;
 }
-.footer-r{
 
+.cmptc{
+    color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.logi{
+    background: #28a745 !important;
+}
+.devlang{
+    background: #dc3545 !important;
+}
+.lang{
+    background: #17a2b8 !important;
+}
+.innercmptc{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content : space-around;
+}
+.btncmptc{
+   margin: 5px; 
 }
 
 

@@ -126,7 +126,7 @@ export const pageQuery = graphql`
       }
       bannerList
     }
-    allContentfulService {
+    allContentfulService(skip: 3, sort: {fields: id}) {
       edges {
         node {
           title

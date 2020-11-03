@@ -1,11 +1,7 @@
 import React, { Component } from "react";
 import Img from "gatsby-image";
-import Button from 'react-bootstrap/Button';
 import Popover from 'react-bootstrap/Popover';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-
-
-
 
 export default class Banner extends Component {
 
@@ -40,7 +36,7 @@ export default class Banner extends Component {
           <>
             <b>Ooops!...</b>
             <br></br>
-            <span>J'utilise bien facebook, mais pas professionnellement.</span>
+            <span>Je n'utilise pas facebook professionnellement. Mais c'est encore une belle icone de plus.</span>
           </>
         </Popover.Content>
       </Popover>
@@ -52,7 +48,7 @@ export default class Banner extends Component {
           <>
             <b>Ooops!...</b>
             <br></br>
-            <span>Regardez plus bas, vous comprendrez pourquoi je n'ai pas instagram...</span>
+            <span>Regardez ma présentation juste en dessous, vous comprendrez pourquoi je n'ai pas instagram...</span>
           </>
         </Popover.Content>
       </Popover>
@@ -69,7 +65,7 @@ export default class Banner extends Component {
           <div className="banner-details">
             <div >
               <OverlayTrigger placement="top" overlay={popoverHello} delay={{ show: 250, hide: 400 }}>
-                <Button className="hello" variant="dark" size="lg">{hello}</Button>
+                <span className="hello" size="lg">{hello}</span>
               </OverlayTrigger>
             </div>
             <h1>Je suis {data.designation}.</h1>
