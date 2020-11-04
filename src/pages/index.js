@@ -6,7 +6,7 @@ import SEO from "../components/seo";
 
 import Banner from "../components/banner";
 import About from "../components/about";
-import Service from "../components/service";
+import Skills from "../components/skills";
 import Work from "../components/work";
 import Contact from "../components/contact";
 import Photos from "../components/photos";
@@ -33,9 +33,9 @@ const IndexPage = ({ data }) => (
       })}
 
     {data.contentfulSiteInformation.menus
-      .filter(item => item === "Service")
+      .filter(item => item === "Skills")
       .map(t => {
-        return <Service data={data.allContentfulService}></Service>;
+        return <Skills></Skills>;
       })}
 
     {data.contentfulSiteInformation.menus

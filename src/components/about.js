@@ -16,14 +16,15 @@ const Header = ({ data }) => (
   <div className="about section" id="About">
     <div className="container">
       <div className="about-main row">
-        <div className="left col-md-5 col-lg-4 mb-3">
+        <div className="left col-md-5 col-lg-4 mb-3 ">
           <Img
             fixed={data.photo.fluid}
             objectFit="cover"
             objectPosition="top center"
+            className=" moving animated animatedFadeIn fadeInLeft"
           />
         </div>
-        <div className="left col-md-7 col-lg-8">
+        <div className="left col-md-7 col-lg-8 moving animated animatedFadeIn fadeInRight">
           <div className="about-details">
             <span className="name">Je m'appelle {data.name}.</span>
             <h2 className="sub-position">

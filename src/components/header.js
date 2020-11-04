@@ -5,11 +5,17 @@ export default class Header extends Component {
   state = {
     menu: false
   }
+  handleAnimate() {
+    // document.querySelectorAll(".moving").className("")
+  }
+
 
   render() {
     const { data, header } = this.props;
     const { menu } = this.state;
+
     return (
+      
       <header className={`site-header ${menu ? "active" : ""}`}>
         <div className="container">
           <div className="header-main">
@@ -41,7 +47,7 @@ export default class Header extends Component {
                     });
                   }}
                 >
-                  <li>
+                  <li onClick={() => this.handleAnimate()}>
                     <Link to="/#home">Accueil</Link>
                   </li>
                   {data.menus
@@ -58,16 +64,16 @@ export default class Header extends Component {
                     .map(t => {
                       return (
                         <li>
-                          <Link to={`/#Timeline`}>Parcours professionnel</Link>
+                          <Link to={`/#Timeline`}>Parcours</Link>
                         </li>
                       );
                     })}
                   {data.menus
-                    .filter(item => item === "Service")
+                    .filter(item => item === "Skills")
                     .map(t => {
                       return (
                         <li>
-                          <Link to={`/#Service`}>Compétences</Link>
+                          <Link to={`/#Skills`}>Compétences</Link>
                         </li>
                       );
                     })}
@@ -119,6 +125,7 @@ export default class Header extends Component {
           </div>
         </div>
       </header>
+      
     );
   }
 }

@@ -54,6 +54,7 @@ export default class Banner extends Component {
       </Popover>
     );
 
+
     return (
       <div className="banner">
         <Img
@@ -61,20 +62,20 @@ export default class Banner extends Component {
           objectFit="cover"
           objectPosition="50% 50%"
         />
-        <div className="container">
-          <div className="banner-details">
-            <div >
+        <div className="container" >
+          <div className="banner-details ">
+            <div>
               <OverlayTrigger placement="top" overlay={popoverHello} delay={{ show: 250, hide: 400 }}>
                 <span className="hello" size="lg">{hello}</span>
               </OverlayTrigger>
             </div>
-            <h1>Je suis {data.designation}.</h1>
-            <ul className="sub-data">
+            <h1 className="moving animated animatedFadeIn fadeInUp">Je suis {data.designation}.</h1>
+            <ul className="sub-data moving animated animatedFadeIn fadeInUp">
               {data.bannerList.map((item, index) => {
                 return <li key={index}>{item}</li>;
               })}
             </ul>
-            <ul className="social">
+            <ul className="social moving animated animatedFadeInUp fadeInUp">
 
               <li>
                 <a

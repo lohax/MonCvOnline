@@ -239,11 +239,68 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
 
 /* Custom */
 
+/* Banner */
 .hello{font-size: xx-large; cursor: pointer;}
 .welcomePopup{color: #343436 !important; font-size: larger;}
+
+/* Animation fadeIn  */
+@keyframes fadeInUp {
+    from {transform: translate3d(0,40px,0)}
+    to {transform: translate3d(0,0,0);opacity: 1}
+}
+@-webkit-keyframes fadeInUp {
+    from {transform: translate3d(0,40px,0)}
+    to {transform: translate3d(0,0,0);opacity: 1}
+}
+
+@keyframes fadeInRight {
+    from {transform: translate3d(40px,0,0)}
+    to {transform: translate3d(0,0,0);opacity: 1}
+}
+@-webkit-keyframes fadeInRight {
+    from {transform: translate3d(40px,0,0)}
+    to {transform: translate3d(0,0,0);opacity: 1}
+}
+
+@keyframes fadeInLeft {
+    from {transform: translate3d(-40px,0,0)}
+    to {transform: translate3d(0,0,0);opacity: 1}
+}
+@-webkit-keyframes fadeInLeft {
+    from {transform: translate3d(-40px,0,0)}
+    to {transform: translate3d(0,0,0);opacity: 1}
+}
+
+.animated {
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both
+}
+.animatedFadeIn {
+    opacity: 0
+}
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+.fadeInRight {
+    opacity: 0;
+    animation-name: fadeInRight;
+    -webkit-animation-name: fadeInRight;
+}
+.fadeInLeft {
+    opacity: 0;
+    animation-name: fadeInLeft;
+    -webkit-animation-name: fadeInLeft;
+}
+
+
+/* Timeline */
 .timeline {
     font-family: sans-serif;
-    text-align: center;
+    /* text-align: center; */
 }
 .timeline-item-title{
     color: white !important;
@@ -262,6 +319,20 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
 .js-focus-visible .focus-visible {
     outline: none !important;
 }
+.card-description{
+    -webkit-align-items: flex-start !important;
+    -webkit-box-align: flex-start !important;
+    align-items: flex-start !important;
+    text-align: flex-start !important;
+    -moz-box-align:flex-start !important;
+
+
+}
+.cardDetailedText{
+    text-align: flex-start !important;
+}
+
+/* Footer */ 
 .footer{
     display: flex;
     flex-direction: row;
@@ -269,6 +340,8 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
     justify-content : space-between;
 }
 
+
+/* Skills*/
 .cmptc{
     color: white;
     padding: 10px;
