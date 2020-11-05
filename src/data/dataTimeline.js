@@ -2,7 +2,7 @@ const items = [
   {
     title: `2019-Aujourd'hui`,
     cardTitle: "La formation continue !",
-    cardSubtitle: `Le monde du web est vaste, je mets donc à profit le temps que j'ai disposition afin de me former et être le plus polyvalent possible.`,
+    cardSubtitle: `Le monde du web est vaste, je mets donc à profit le temps que j'ai à disposition afin de me former et être le plus polyvalent possible.`,
     cardDetailedText: ``
   },
   {

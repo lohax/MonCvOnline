@@ -12,12 +12,15 @@ import Contact from "../components/contact";
 import Photos from "../components/photos";
 import Timeline from"../components/Timeline"
 
+
 const IndexPage = ({ data }) => (
+  
   <Layout header="home">
     <SEO
       title={data.contentfulAboutMe.designation}
       keywords={[`Loïc Chambost`, `Frontend Developer`, `Developer`]}
     />
+
     <Banner data={data.contentfulAboutMe}></Banner>
 
     {data.contentfulSiteInformation.menus

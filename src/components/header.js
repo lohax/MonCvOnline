@@ -5,10 +5,6 @@ export default class Header extends Component {
   state = {
     menu: false
   }
-  handleAnimate() {
-    // document.querySelectorAll(".moving").className("")
-  }
-
 
   render() {
     const { data, header } = this.props;
@@ -47,7 +43,7 @@ export default class Header extends Component {
                     });
                   }}
                 >
-                  <li onClick={() => this.handleAnimate()}>
+                  <li>
                     <Link to="/#home">Accueil</Link>
                   </li>
                   {data.menus

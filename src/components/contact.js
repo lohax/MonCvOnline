@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Alert } from 'react-bootstrap';
+import Jump from 'react-reveal/Jump';
 
 export default class Contact extends Component {
 
@@ -35,6 +36,7 @@ export default class Contact extends Component {
           <div className="section-head">
             <h2 className="text-center">Contact</h2>
           </div>
+          <Jump>
           <form
             action="https://formspree.io/f/xeqpkapr"
             name="contact"
@@ -59,6 +61,7 @@ export default class Contact extends Component {
 
             </div>
           </form>
+          </Jump>
         </div>
       </div>
     );
