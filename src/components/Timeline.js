@@ -18,7 +18,7 @@ const Timeline = () => (
         theme={{ primary: "#343436", secondary: "#E36D0B" }}
         scrollable={true}
       >
-        <Fade>
+        <Fade right cascade>
           <div className="cardDetailedText">
             <div>Languages et domaines suivis :</div>
             <div>- React.js, </div>
@@ -29,7 +29,7 @@ const Timeline = () => (
           </div>
         </Fade>
 
-        <Fade>
+        <Fade right cascade>
           <div className="cardDetailedText">
             <div>Elaboration d'interfaces pour services IT, ressources humaines, services généraux.</div>
             <div>Gestion de personnel (plannings, congés, temps de travail, pointage, etc.)</div>
@@ -38,7 +38,7 @@ const Timeline = () => (
           </div>
         </Fade>
 
-        <Fade>
+        <Fade right cascade>
           <div className="cardDetailedText">
             <div>Sites vitrine et e-commerce proposant la gestion par les clients (CMS Joomla)</div>
             <div>Visites virtuelles</div>
@@ -47,26 +47,26 @@ const Timeline = () => (
           </div>
         </Fade>
 
-        <Fade>
+        <Fade right cascade>
           <div className="cardDetailedText">
             Production de sites vitrine
           </div>
         </Fade>
 
-        <Fade>
+        <Fade right cascade>
           <div className="cardDetailedText">
             Finalisation de projets suite au stage durant la formation Euromaster
         </div>
         </Fade>
 
-        <Fade>
+        <Fade right cascade>
           <div className="cardDetailedText">
             <div>Apprentissage des techniques de création de site internet par le développement et l’utilisation de CMS (Joomla!).</div>
             <div>Formation Photoshop et montage vidéo (Création d'un clip).</div>
           </div>
         </Fade>
 
-        <Fade>
+        <Fade right cascade>
           <div className="cardDetailedText">
             <div>Nexter System : Cariste et conditionnement de matériels militaires</div>
             <div>O.T.C : Cariste et manutentionnaire</div>
@@ -78,14 +78,14 @@ const Timeline = () => (
           </div>
         </Fade>
 
-        <Fade>
+        <Fade right cascade>
           <div className="cardDetailedText">
             <div>Stages : </div>
             <div>Institut Médico-Educatif et de Rééducation «le Phénix» à Roanne</div>
           </div>
         </Fade>
 
-        <Fade>
+        <Fade right cascade>
           <div className="cardDetailedText">
             <div>Stages :</div>
             <div>Centre de rééducation à Karlstad (Suède)</div>

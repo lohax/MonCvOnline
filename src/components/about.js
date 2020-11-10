@@ -1,6 +1,7 @@
 import React from "react";
 import Img from "gatsby-image";
-import "../css/style.css";
+import { Button } from 'react-bootstrap';
+
 
 import Reveal from 'react-reveal/Reveal'
 
@@ -52,26 +53,32 @@ const Header = ({ data }) => (
               />
               <ul className="details">
                 <li>
-                  <strong>Nom</strong>
+                  <strong><i className="fa fa-user-tag"></i></strong>
                   <p>{data.name}</p>
                 </li>
                 <li>
-                  <strong>Âge</strong>
+                  <strong><i className="fa fa-calendar-alt"></i></strong>
                   <p>{calculate_age('1984-03-17')} ans</p>
                 </li>
                 <li>
-                  <strong>Localisation</strong>
+                  <strong><i className="fa fa-map-marked-alt"></i></strong>
                   <p>{data.location}</p>
                 </li>
                 <li>
-                  <strong>Email</strong>
+                  <strong><i className="fa fa-envelope"></i></strong>
                   <p>
                     <a href={`mailto:${data.gmail}`}>{data.gmail}</a>
                   </p>
                 </li>
                 <li>
                   <strong>CV</strong>
-                  <p><a href="//assets.ctfassets.net/fhp5aho9vq9w/6H3iameCFSUJyJmJ9o7Hjv/fed4d8b211331193fbca5b2b7e2ffb17/monCV.pdf">monCV.pdf</a></p>
+                  <p>
+                    <a href="//assets.ctfassets.net/fhp5aho9vq9w/6H3iameCFSUJyJmJ9o7Hjv/fed4d8b211331193fbca5b2b7e2ffb17/monCV.pdf">
+                      <Button variant="dark" >
+                        <a href="//assets.ctfassets.net/fhp5aho9vq9w/6H3iameCFSUJyJmJ9o7Hjv/fed4d8b211331193fbca5b2b7e2ffb17/monCV.pdf">
+                          <i className="fa fa-download"></i>
+                        </a>
+                      </Button></a></p>
                 </li>
 
               </ul>

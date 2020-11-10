@@ -11,8 +11,9 @@ export default class Skills extends Component {
     const dataLog = ["Visual studio code", "Photoshop", "Office Suite", "SQLManager"]
 
     return (
-      <Bounce top cascade>
-        <div className="service section  moving animated animatedFadeIn fadeInUp" id="Skills">
+      <div className="service section" id="Skills">
+        <Bounce top cascade>
+
           <div className="container">
             <div className="section-head">
               <h2>Compétences</h2>
@@ -74,8 +75,9 @@ export default class Skills extends Component {
 
             </div>
           </div>
-        </div>
-      </Bounce>
+        </Bounce>
+
+      </div>
     );
   }
 }

@@ -42,7 +42,7 @@ export default class Photos extends Component {
           </div>
           <div className="slider-section photos-list">
             <Slider {...settings}>
-              {data.photos.slice(0, 9).map((item, index) => {
+              {data.Photos.slice(0, 9).map((item, index) => {
                 return (
                   <div key={index} className="photos-item">
                     <Img

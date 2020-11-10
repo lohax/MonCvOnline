@@ -9,12 +9,11 @@ import About from "../components/about";
 import Skills from "../components/skills";
 import Work from "../components/work";
 import Contact from "../components/contact";
-import Photos from "../components/photos";
-import Timeline from"../components/Timeline"
+import Timeline from "../components/Timeline"
 
 
 const IndexPage = ({ data }) => (
-  
+
   <Layout header="home">
     <SEO
       title={data.contentfulAboutMe.designation}
@@ -48,18 +47,11 @@ const IndexPage = ({ data }) => (
       })}
 
     {/* {data.contentfulSiteInformation.menus
-      .filter(item => item === "Testimonials")
-      .map(t => {
-        return (
-          <Testimonial data={data.allContentfulTestimonials}></Testimonial>
-        );
-      })} */}
-
-    {data.contentfulSiteInformation.menus
       .filter(item => item === "Photos")
       .map(t => {
         return <Photos data={data.contentfulPhotos}></Photos>;
       })}
+ */}
 
     {data.contentfulSiteInformation.menus
       .filter(item => item === "Contact")
@@ -141,77 +133,89 @@ export const pageQuery = graphql`
         }
       }
     }
-    allContentfulTestimonials {
-      edges {
-        node {
-          name
-          subTitle
-          description {
-            childMarkdownRemark {
-              html
-            }
+    # allContentfulTestimonials {
+    #   edges {
+    #     node {
+    #       name
+    #       subTitle
+    #       description {
+    #         childMarkdownRemark {
+    #           html
+    #         }
+    #       }
+    #       avatarImage {
+    #         fluid(maxWidth: 200) {
+    #           base64
+    #           aspectRatio
+    #           src
+    #           srcSet
+    #           srcWebp
+    #           srcSetWebp
+    #           sizes
+    #         }
+    #       }
+    #     }
+    #   }
+    # }
+    allContentfulWorks(sort: {order: ASC, fields: order}, filter: {node_locale: {eq: "fr"}}) {
+
+    edges {
+      node {
+        id
+        siteName
+        shortdescription
+        url
+        sitedescription {
+          sitedescription
+          childMarkdownRemark {
+            html
           }
-          avatarImage {
-            fluid(maxWidth: 200) {
-              base64
-              aspectRatio
-              src
-              srcSet
-              srcWebp
-              srcSetWebp
-              sizes
-            }
+        }
+        usedSkills
+        order
+        image {
+          fluid {
+            base64
+            tracedSVG
+            srcWebp
+            srcSetWebp
           }
+          description
+        }
+        screenShots {
+            file {
+            url
+            fileName
+            contentType
+          }
+          fluid(maxWidth: 600) {
+            base64
+            tracedSVG
+            srcWebp
+            srcSetWebp
+          }
+          description
+          
         }
       }
     }
-    allContentfulWorks {
-      edges {
-        node {
-          siteName
-          url
-          image {
-            fluid(maxWidth: 600) {
-              base64
-              aspectRatio
-              src
-              srcSet
-              srcWebp
-              srcSetWebp
-              sizes
-            }
-          }
-        }
-      }
-    }
-    contentfulPhotos {
-      photos {
-        fluid(maxWidth: 600) {
-          base64
-          aspectRatio
-          src
-          srcSet
-          srcWebp
-          srcSetWebp
-          sizes
-        }
-      }
-    }
+  }
+
+    # contentfulPhotos {
+    #   photos {
+    #     fluid(maxWidth: 600) {
+    #       base64
+    #       aspectRatio
+    #       src
+    #       srcSet
+    #       srcWebp
+    #       srcSetWebp
+    #       sizes
+    #     }
+    #   }
+    # }
     contentfulSiteInformation {
       menus
-    },
-  #   contentfulTimeline {
-  #   id
-  #   title
-  #   contentTitle
-  #   contentText {
-  #     id
-  #     contentText
-  #   }
-  #   contentDetailedText {
-  #     id
-  #     contentDetailedText
-  #   }
-  # }
+    }
   }
 `;
