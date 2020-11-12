@@ -12,7 +12,8 @@ export default class work extends Component {
       <div className="work section" id="Work">
         <div className="container">
           <div className="section-head">
-            <h2 className="text-center">Portfolio</h2>
+            <h2 className="text-center">Portfolio </h2>
+            {/* <h3 className="enDev"><i class="fas fa-exclamation-circle"></i> En cours de développement</h3> */}
           </div>
 
           <ul className="work-list">

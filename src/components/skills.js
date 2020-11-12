@@ -30,7 +30,6 @@ export default class Skills extends Component {
                         <Bounce top cascade>
                           <Button variant="outline-info" size="sm" className="btncmptc">{item}</Button>
                         </Bounce>
-
                       );
                     })}
 
@@ -47,7 +46,6 @@ export default class Skills extends Component {
                       return (
                         <Bounce top cascade>
                           <Button variant="outline-danger" size="sm" className="btncmptc">{item}</Button>
-
                         </Bounce>
                       );
                     })}

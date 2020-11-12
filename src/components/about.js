@@ -18,7 +18,11 @@ const calculate_age = (bd) => {
 
 const Header = ({ data }) => (
 
+  
+
   <div className="about section" id="About">
+
+{console.log(data)}
     <div className="container">
       <div className="about-main row">
         <div className="left col-md-5 col-lg-4 mb-3 ">
@@ -73,12 +77,15 @@ const Header = ({ data }) => (
                 <li>
                   <strong>CV</strong>
                   <p>
-                    <a href="//assets.ctfassets.net/fhp5aho9vq9w/6H3iameCFSUJyJmJ9o7Hjv/fed4d8b211331193fbca5b2b7e2ffb17/monCV.pdf">
+                  {/* <a href="//assets.ctfassets.net/fhp5aho9vq9w/6H3iameCFSUJyJmJ9o7Hjv/fed4d8b211331193fbca5b2b7e2ffb17/monCV.pdf"> */}
+                    <a href={data.cv.file.url}>
                       <Button variant="dark" >
-                        <a href="//assets.ctfassets.net/fhp5aho9vq9w/6H3iameCFSUJyJmJ9o7Hjv/fed4d8b211331193fbca5b2b7e2ffb17/monCV.pdf">
+                        <a href={data.cv.file.url}>
                           <i className="fa fa-download"></i>
                         </a>
-                      </Button></a></p>
+                      </Button>
+                    </a>
+                  </p>
                 </li>
 
               </ul>

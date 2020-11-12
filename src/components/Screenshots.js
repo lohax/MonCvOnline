@@ -64,11 +64,9 @@ export default class Screenshots extends Component {
     };
   }
   render() {
+
     const { data } = this.props;
     const { activePopup, selectedItem } = this.state;
-
-    console.log('data screen = ', data)
-    // console.log('data.node = ', data.node)
 
     return (
       <Fragment>
@@ -76,29 +74,32 @@ export default class Screenshots extends Component {
           <div className="container">
             <div className="slider-section photos-list">
 
-              <Slider {...settings}>
-                {data.screenShots.map((item, index) => {
-                  return (
-                    <div
-                      key={index}
-                      className="photos-item"
-                      onClick={() => {
-                        this.setState({
-                          activePopup: true,
-                          selectedItem: index
-                        });
-                      }}>
-                      <Img
-                        fixed={item.fluid}
-                        objectFit="cover"
-                        objectPosition="50% 50%"
-                        className='borderImg'
-                      />
-                    </div>
+              
 
-                  );
-                })}
-              </Slider>
+              
+                <Slider {...settings}>
+                  {data.screenShots.map((item, index) => {
+                    return (
+                      <div
+                        key={index}
+                        className="photos-item"
+                        onClick={() => {
+                          this.setState({
+                            activePopup: true,
+                            selectedItem: index
+                          });
+                        }}>
+                        <Img
+                          fixed={item.fluid}
+                          objectFit="cover"
+                          objectPosition="50% 50%"
+                          className='borderImg'
+                        />
+                      </div>
+                    );
+                  })}
+                </Slider>
+
               {activePopup ? (
                 <div className="rg-popup">
                   <span

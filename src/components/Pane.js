@@ -19,9 +19,6 @@ class Pane extends Component {
 
         const { item } = this.props;
 
-        console.log('item.node.usedSkills', item.node.usedSkills)
-
-
         return (
             <Fragment>
 
@@ -49,14 +46,17 @@ class Pane extends Component {
                     }}
                 >
 
-
-                    <div className="row">
-                        <div className="col-md-12 mb-6">
-                            <div className="service-main smallpadding">
-                                {item.node.screenShots !== null ? <Screenshots data={item.node}></Screenshots> : ''}
+                    {
+                        item.node.screenShots !== null ?
+                            <div className="row">
+                                <div className="col-md-12 mb-6">
+                                    <div className="service-main smallpadding">
+                                        <Screenshots data={item.node}></Screenshots>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                            : ''
+                    }
 
                     <div className="row">
 
@@ -71,7 +71,7 @@ class Pane extends Component {
                             </div>
                         </div>
 
-                        <div className="col-md-4 mb-6">
+                        <div className="col-md-4 mb-6 ">
                             <div className="service-main">
                                 <div className="devlang cmptc"><h3><i className="fas fa-tools"></i></h3></div>
                                 <div className="innercmptc">
@@ -98,7 +98,7 @@ class Pane extends Component {
 
                     {
                         item.node.url !== "#" ?
-                            <div className="row">
+                            <div className="row paneFooter">
                                 <div className="col-md-12 mb-6">
                                     <div className="service-main">
                                         {item.node.siteName} : <a href={item.node.url} target="_blank">{item.node.url} </a>
@@ -108,11 +108,7 @@ class Pane extends Component {
                             : ''
                     }
 
-
-
                 </SlidingPane>
-
-
 
             </Fragment >
         );

@@ -427,6 +427,13 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
 .leftA{
     text-align: left;
 }
+.enDev{
+    color: rgb(163, 0, 0);
+}
+
+.paneFooter{
+    margin-top: 20px;
+}
 
 
 
