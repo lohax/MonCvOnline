@@ -43,7 +43,7 @@ const Header = ({ data }) => (
               <span className="name">Je m'appelle {data.name}.</span>
               <h2 className="sub-position">
                 Je suis {data.designation}.
-            </h2>
+              </h2>
               <div style={{ color: '#E36D0B', fontWeight: 'bold' }}
                 dangerouslySetInnerHTML={{
                   __html: data.description.childMarkdownRemark.html

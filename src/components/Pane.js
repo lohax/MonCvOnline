@@ -6,6 +6,7 @@ import Screenshots from "./Screenshots"
 import Button from 'react-bootstrap/Button';
 import Bounce from 'react-reveal/Bounce';
 import "../css/style.css";
+import isMobile from "react-device-detect";
 
 class Pane extends Component {
     constructor(props) {
@@ -18,6 +19,8 @@ class Pane extends Component {
     render() {
 
         const { item } = this.props;
+
+        
 
         return (
             <Fragment>
@@ -40,7 +43,7 @@ class Pane extends Component {
                     isOpen={this.state.isPaneOpen}
                     title={<h2 className="subtitleH2">{item.node.siteName}</h2>}
                     subtitle={<span>{item.node.shortdescription}</span>}
-                    width="70%"
+                    width={isMobile || (typeof window !== 'undefined' && window.innerWidth < 568) ? "100%" : "70%"}
                     onRequestClose={() => {
                         this.setState({ isPaneOpen: false });
                     }}
@@ -101,7 +104,7 @@ class Pane extends Component {
                             <div className="row paneFooter">
                                 <div className="col-md-12 mb-6">
                                     <div className="service-main">
-                                        {item.node.siteName} : <a href={item.node.url} target="_blank">{item.node.url} </a>
+                                        {item.node.url.includes('github') ? <i class="fab fa-github icolink"></i> : <i class="fas fa-link icolink"></i>}  <a href={item.node.url} target="_blank">{item.node.siteName}</a>
                                     </div>
                                 </div>
                             </div>

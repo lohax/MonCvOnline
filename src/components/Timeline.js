@@ -31,10 +31,10 @@ const Timeline = () => (
 
         <Fade right cascade>
           <div className="cardDetailedText">
-            <div>Elaboration d'interfaces pour services IT, ressources humaines, services généraux.</div>
-            <div>Gestion de personnel (plannings, congés, temps de travail, pointage, etc.)</div>
-            <div>Création de helpdesk (gestion SLA/SLT, statistiques, etc.)</div>
-            <div>Gestion de réservations</div>
+            <div>Elaboration d'interfaces pour services IT, ressources humaines, services généraux :</div>
+            <div>- Gestion de personnel (plannings, congés, temps de travail, pointage, etc.)</div>
+            <div>- Création de helpdesk (gestion SLA/SLT, statistiques, etc.)</div>
+            <div>- Gestion de réservations</div>
           </div>
         </Fade>
 
@@ -47,13 +47,13 @@ const Timeline = () => (
           </div>
         </Fade>
 
-        <Fade right cascade>
+        <Fade right >
           <div className="cardDetailedText">
             Production de sites vitrine
           </div>
         </Fade>
 
-        <Fade right cascade>
+        <Fade right >
           <div className="cardDetailedText">
             Finalisation de projets suite au stage durant la formation Euromaster
         </div>
@@ -66,15 +66,9 @@ const Timeline = () => (
           </div>
         </Fade>
 
-        <Fade right cascade>
+        <Fade right >
           <div className="cardDetailedText">
-            <div>Nexter System : Cariste et conditionnement de matériels militaires</div>
-            <div>O.T.C : Cariste et manutentionnaire</div>
-            <div>Sicarev : Manutentionnaire</div>
-            <div>Dessert & Co : Plongeur</div>
-            <div>Patisserie/Chocolaterie Pralus : Livreur et manutentionnaire</div>
-            <div>Eyraud Plant : Horticulture</div>
-            <div>Lyon Sport Loisir : Moniteur en colonie de Vacances</div>
+            <div>Cariste, manutentionnaire, plongeur, livreur, ouvrier horticole, moniteur en colonie de vacances</div>
           </div>
         </Fade>
 

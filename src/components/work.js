@@ -20,8 +20,6 @@ export default class work extends Component {
 
             {data.edges.map((item, index) => {
 
-              console.info(data)
-
               return (
                 <Fragment key={index}>
 

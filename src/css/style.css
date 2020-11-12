@@ -52,7 +52,7 @@ body{margin:0;background:#fafafe; color: #343436;}
 .section:nth-child(even){background:#fff}
 .about-details .name{margin-bottom:10px;display:block}
 .about-details .sub-position{margin-bottom:10px;display:block}
-.about-details .details{padding:0;list-style:none;border-top:1px solid #343436;padding-top:30px;margin-bottom:30px}
+.about-details .details{padding:0;list-style:none;border-top:1px solid #343436;padding-top:15px;margin-bottom:15px}
 .about-details .details li{display:flex;align-items:center;margin-bottom:10px}
 .about-details .details li p{margin:0}
 .about-details .details li strong{width:60px}
@@ -430,9 +430,11 @@ code{background-color:#333;border-radius:3px;margin-bottom:30px;display:block;pa
 .enDev{
     color: rgb(163, 0, 0);
 }
-
 .paneFooter{
     margin-top: 20px;
+}
+.icolink{
+    font-size: 18px;
 }
 
 

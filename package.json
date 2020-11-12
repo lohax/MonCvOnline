@@ -25,6 +25,7 @@
     "react": "^16.14.0",
     "react-bootstrap": "^1.4.0",
     "react-chrono": "^1.6.1",
+    "react-device-detect": "^1.14.0",
     "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
     "react-reveal": "^1.2.2",
