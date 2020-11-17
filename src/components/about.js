@@ -68,16 +68,16 @@ const Header = ({ data }) => (
                 <li>
                   <strong><i className="fa fa-envelope"></i></strong>
                   <p>
-                    <a href={`mailto:${data.gmail}`}>{data.gmail}</a>
+                    <a href={`mailto:${data.gmail}`} name="maillink">{data.gmail}</a>
                   </p>
                 </li>
                 <li>
                   <strong>CV</strong>
                   <p>
                   {/* <a href="//assets.ctfassets.net/fhp5aho9vq9w/6H3iameCFSUJyJmJ9o7Hjv/fed4d8b211331193fbca5b2b7e2ffb17/monCV.pdf"> */}
-                    <a href={data.cv.file.url}>
-                      <Button variant="dark" >
-                        <a href={data.cv.file.url}>
+                    <a href={data.cv.file.url} name="cvlink">
+                      <Button variant="dark" name="buttoncvlink">
+                        <a href={data.cv.file.url} name="cvlink">
                           <i className="fa fa-download"></i>
                         </a>
                       </Button>
@@ -94,6 +94,7 @@ const Header = ({ data }) => (
                       href={data.linkdin}
                       target="_blank"
                       rel="noopener noreferrer"
+                      name="linkedinlink"
                     ></a>
                   </li>
                   <li>
@@ -102,6 +103,8 @@ const Header = ({ data }) => (
                       href={data.github}
                       target="_blank"
                       rel="noopener noreferrer"
+                      name="githublink"
+
                     ></a>
                   </li>
                 </ul>

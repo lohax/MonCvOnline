@@ -37,30 +37,33 @@ export default class Contact extends Component {
             <h2 className="text-center">Contact</h2>
           </div>
           <Jump>
-          <form
-            action="https://formspree.io/f/xeqpkapr"
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            data-netlify-honeypot="bot"
-            onSubmit={this.submitForm}
-          >
-            <div>
-              <input type="text" name="name" required placeholder="Nom" />
-            </div>
-            <div>
-              <input type="email" name="email" required placeholder="Email" />
-            </div>
-            <div>
-              <textarea name="message" required placeholder="Message" ></textarea>
-            </div>
-            <div>
+            <form
+              action="https://formspree.io/f/xeqpkapr"
+              name="contact"
+              method="POST"
+              data-netlify="true"
+              data-netlify-honeypot="bot"
+              onSubmit={this.submitForm}
+            >
+              <div>
+                <label htmlFor="name"><input type="text" name="name" required placeholder="Nom et prénom" /></label>
+                
+              </div>
+              <div>
+                <label htmlFor="email"><input type="email" name="email" required placeholder="Email" /></label>
+                
+              </div>
+              <div>
+                <label htmlFor="message"><textarea name="message" required placeholder="Message" ></textarea></label>
+                
+              </div>
+              <div>
 
-              {this.state.status === "SUCCESS" ? <Alert variant="success"><p>Merci!</p><p>Votre message a bien été envoyé</p></Alert> : <button type="submit">Envoyer</button>}
-              {this.state.status === "ERROR" && <Alert variant="danger">Ooops! Une erreur est survenue.</Alert>}
+                {this.state.status === "SUCCESS" ? <Alert variant="success"><p>Merci!</p><p>Votre message a bien été envoyé</p></Alert> : <button type="submit" name="send">Envoyer</button>}
+                {this.state.status === "ERROR" && <Alert variant="danger">Ooops! Une erreur est survenue.</Alert>}
 
-            </div>
-          </form>
+              </div>
+            </form>
           </Jump>
         </div>
       </div>

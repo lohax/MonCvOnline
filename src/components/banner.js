@@ -91,6 +91,7 @@ export default class Banner extends Component {
                     href={data.linkdin}
                     target="_blank"
                     rel="noopener noreferrer"
+                    name="linkedinlink"
                   ></a>
                 </li>
 
@@ -100,6 +101,7 @@ export default class Banner extends Component {
                     href={data.github}
                     target="_blank"
                     rel="noopener noreferrer"
+                    name="githublink"
                   ></a>
                 </li>
 
@@ -110,6 +112,7 @@ export default class Banner extends Component {
                       href="#"
                       target=""
                       rel=""
+                      name="faketwitterlink"
                     ></a>
                   </OverlayTrigger>
                 </li>

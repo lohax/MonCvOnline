@@ -45,7 +45,10 @@ module.exports = {
         background_color: `#E36D0B`,
         theme_color: `#FFFFFF`,
         display: 'standalone',
-        icon: `src/images/favicon.png` // This path is relative to the root of the site.
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+        icon_options: {
+          purpose: `maskable`,
+        },
       }
     }, // To learn more, visit: https://gatsby.dev/offline // this (optional) plugin enables Progressive Web App + Offline functionality
     `gatsby-plugin-offline`
