@@ -32,15 +32,19 @@ const Layout = ({ children, header }) => (
     
     render={data => (
       <>
+      
         <Header
           data={data.contentfulSiteInformation}
           siteTitle={data.contentfulSiteInformation.siteName}
           header={header}
         />
+
         <div>
           <main id="home">{children}</main>
         </div>
+
         <Footer siteName={data.contentfulSiteInformation.siteName} />
+
       </>
     )}
   />
