@@ -3,7 +3,6 @@ import Img from "gatsby-image";
 import Popover from 'react-bootstrap/Popover';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Bounce from 'react-reveal/Bounce';
-import Reveal from 'react-reveal/Reveal'
 
 export default class Banner extends Component {
 
