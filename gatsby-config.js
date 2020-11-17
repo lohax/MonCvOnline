@@ -44,6 +44,7 @@ module.exports = {
         start_url: `/`,
         background_color: `#E36D0B`,
         theme_color: `#FFFFFF`,
+        display: 'standalone',
         icon: `src/images/favicon.png` // This path is relative to the root of the site.
       }
     }, // To learn more, visit: https://gatsby.dev/offline // this (optional) plugin enables Progressive Web App + Offline functionality

@@ -9,12 +9,12 @@ const Timeline = () => (
 
   <div className="timeline" id="Timeline">
 
-    <div style={{ width: "100%", height: "140vh" }}>
+    <div style={{ width: "100%", height: "100%" }}>
 
       <Chrono
         items={data}
         mode="VERTICAL_ALTERNATING"
-        cardHeight={650}
+        // cardHeight={650}
         theme={{ primary: "#343436", secondary: "#E36D0B" }}
         scrollable={true}
       >

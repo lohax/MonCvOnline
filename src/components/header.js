@@ -108,14 +108,50 @@ export default class Header extends Component {
                     </li>
 
                     {data.menus
-                      .filter(item => item === "Photos")
-                      .map(t => {
-                        return (
-                          <li>
-                            <Link to="/photos">Photos</Link>
-                          </li>
-                        );
-                      })}
+                    .filter(item => item === "About")
+                    .map(t => {
+                      return (
+                        <li>
+                          <Link to={`/#About`}>Présentation</Link>
+                        </li>
+                      );
+                    })}
+                  {data.menus
+                    .filter(item => item === "Timeline")
+                    .map(t => {
+                      return (
+                        <li>
+                          <Link to={`/#Timeline`}>Parcours</Link>
+                        </li>
+                      );
+                    })}
+                  {data.menus
+                    .filter(item => item === "Skills")
+                    .map(t => {
+                      return (
+                        <li>
+                          <Link to={`/#Skills`}>Compétences</Link>
+                        </li>
+                      );
+                    })}
+                  {data.menus
+                    .filter(item => item === "Work")
+                    .map(t => {
+                      return (
+                        <li>
+                          <Link to={`/#Work`}>Portfolio</Link>
+                        </li>
+                      );
+                    })}
+                  {data.menus
+                    .filter(item => item === "Contact")
+                    .map(t => {
+                      return (
+                        <li>
+                          <Link to={`/#Contact`}>Contact</Link>
+                        </li>
+                      );
+                    })}
                   </ul>
                 </div>
               )}

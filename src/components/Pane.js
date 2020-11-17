@@ -20,8 +20,6 @@ class Pane extends Component {
 
         const { item } = this.props;
 
-        
-
         return (
             <Fragment>
 

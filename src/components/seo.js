@@ -31,18 +31,6 @@ function SEO({ description, lang, meta, keywords, title, data }) {
               {
                 property: `og:type`,
                 content: `website`
-              },
-              {
-                name: `twitter:card`,
-                content: `summary`
-              },
-              {
-                name: `twitter:title`,
-                content: title
-              },
-              {
-                name: `twitter:description`,
-                content: data.contentfulSiteInformation.siteDescription
               }
             ]
               .concat(
@@ -62,7 +50,7 @@ function SEO({ description, lang, meta, keywords, title, data }) {
 }
 
 SEO.defaultProps = {
-  lang: `en`,
+  lang: `fr`,
   meta: [],
   keywords: []
 };
@@ -82,7 +70,6 @@ const detailsQuery = graphql`
     contentfulSiteInformation {
       siteName
       siteDescription
-      
     }
   }
 `;
