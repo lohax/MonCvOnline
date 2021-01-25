@@ -1,49 +1,48 @@
-import React from "react";
-import { graphql } from "gatsby";
+import React from 'react'
+import { graphql } from 'gatsby'
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from '../components/layout'
+import SEO from '../components/seo'
 
-import Banner from "../components/banner";
-import About from "../components/about";
-import Skills from "../components/skills";
-import Work from "../components/work";
-import Contact from "../components/contact";
-import Timeline from "../components/Timeline"
-
+import Banner from '../components/banner'
+import About from '../components/about'
+import Skills from '../components/skills'
+import Work from '../components/work'
+import Contact from '../components/contact'
+import Timeline from '../components/Timeline'
 
 const IndexPage = ({ data }) => (
 
-  <Layout header="home">
+  <Layout header='home'>
     <SEO
       title={data.contentfulAboutMe.designation}
-      keywords={[`Loïc Chambost`, `Frontend Developer`, `Developer`]}
+      keywords={['Loïc Chambost', 'Frontend Developer', 'Developer']}
     />
 
-    <Banner data={data.contentfulAboutMe}></Banner>
+    <Banner data={data.contentfulAboutMe} />
 
     {data.contentfulSiteInformation.menus
-      .filter(item => item === "About")
+      .filter(item => item === 'About')
       .map(t => {
-        return <About data={data.contentfulAboutMe}></About>;
+        return <About data={data.contentfulAboutMe} />
       })}
 
     {data.contentfulSiteInformation.menus
-      .filter(item => item === "Timeline")
+      .filter(item => item === 'Timeline')
       .map(t => {
-        return <Timeline data={data.allContentfulTimeline}></Timeline>;
+        return <Timeline data={data.allContentfulTimeline} />
       })}
 
     {data.contentfulSiteInformation.menus
-      .filter(item => item === "Skills")
+      .filter(item => item === 'Skills')
       .map(t => {
-        return <Skills></Skills>;
+        return <Skills />
       })}
 
     {data.contentfulSiteInformation.menus
-      .filter(item => item === "Work")
+      .filter(item => item === 'Work')
       .map(t => {
-        return <Work data={data.allContentfulWorks}></Work>;
+        return <Work data={data.allContentfulWorks} />
       })}
 
     {/* {data.contentfulSiteInformation.menus
@@ -54,14 +53,14 @@ const IndexPage = ({ data }) => (
  */}
 
     {data.contentfulSiteInformation.menus
-      .filter(item => item === "Contact")
+      .filter(item => item === 'Contact')
       .map(t => {
-        return <Contact data={data.contentfulAboutMe.gmail}></Contact>;
+        return <Contact data={data.contentfulAboutMe.gmail} />
       })}
   </Layout>
-);
+)
 
-export default IndexPage;
+export default IndexPage
 
 export const pageQuery = graphql`
   query AboutQuery {
@@ -218,5 +217,4 @@ export const pageQuery = graphql`
       menus
     }
   }
-`;
-
+`

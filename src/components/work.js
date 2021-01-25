@@ -1,24 +1,20 @@
-import React, { Component, Fragment } from "react";
-import Pane from "./Pane"
+import React, { Component, Fragment } from 'react'
+import Pane from './Pane'
 
 export default class work extends Component {
-
-
-  render() {
-
-    const { data } = this.props;
+  render () {
+    const { data } = this.props
 
     return (
-      <div className="work section" id="Work">
-        <div className="container">
-          <div className="section-head">
-            <h2 className="text-center">Portfolio </h2>
+      <div className='work section' id='Work'>
+        <div className='container'>
+          <div className='section-head'>
+            <h2 className='text-center'>Portfolio </h2>
           </div>
 
-          <ul className="work-list">
+          <ul className='work-list'>
 
             {data.edges.map((item, index) => {
-
               return (
                 <Fragment key={index}>
 
@@ -29,8 +25,7 @@ export default class work extends Component {
                   />
 
                 </Fragment>
-              );
-
+              )
             })}
 
           </ul>
@@ -38,6 +33,6 @@ export default class work extends Component {
 
       </div>
 
-    );
+    )
   }
 }

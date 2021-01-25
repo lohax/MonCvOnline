@@ -1,25 +1,24 @@
-import React from "react";
-import { Chrono } from "react-chrono";
-import data from "../data/dataTimeline";
-import "../css/style.css";
+import React from 'react'
+import { Chrono } from 'react-chrono'
+import data from '../data/dataTimeline'
+import '../css/style.css'
 import Fade from 'react-reveal/Fade'
-
 
 const Timeline = () => (
 
-  <div className="timeline" id="Timeline">
+  <div className='timeline' id='Timeline'>
 
-    <div style={{ width: "100%", height: "100%" }}>
+    <div style={{ width: '100%', height: '100%' }}>
 
       <Chrono
         items={data}
-        mode="VERTICAL_ALTERNATING"
+        mode='VERTICAL_ALTERNATING'
         // cardHeight={650}
-        theme={{ primary: "#343436", secondary: "#E36D0B" }}
-        scrollable={true}
+        theme={{ primary: '#343436', secondary: '#E36D0B' }}
+        scrollable
       >
         <Fade right cascade>
-          <div className="cardDetailedText">
+          <div className='cardDetailedText'>
             <div>Languages et domaines suivis :</div>
             <div>- React.js, </div>
             <div>- Vue.js, </div>
@@ -30,7 +29,7 @@ const Timeline = () => (
         </Fade>
 
         <Fade right cascade>
-          <div className="cardDetailedText">
+          <div className='cardDetailedText'>
             <div>Elaboration d'interfaces pour services IT, ressources humaines, services généraux :</div>
             <div>- Gestion de personnel (plannings, congés, temps de travail, pointage, etc.)</div>
             <div>- Création de helpdesk (gestion SLA/SLT, statistiques, etc.)</div>
@@ -39,7 +38,7 @@ const Timeline = () => (
         </Fade>
 
         <Fade right cascade>
-          <div className="cardDetailedText">
+          <div className='cardDetailedText'>
             <div>Sites vitrine et e-commerce proposant la gestion par les clients (CMS Joomla)</div>
             <div>Visites virtuelles</div>
             <div>Conception d'identité graphique</div>
@@ -47,40 +46,40 @@ const Timeline = () => (
           </div>
         </Fade>
 
-        <Fade right >
-          <div className="cardDetailedText">
+        <Fade right>
+          <div className='cardDetailedText'>
             Production de sites vitrine
           </div>
         </Fade>
 
-        <Fade right >
-          <div className="cardDetailedText">
+        <Fade right>
+          <div className='cardDetailedText'>
             Finalisation de projets suite au stage durant la formation Euromaster
-        </div>
+          </div>
         </Fade>
 
         <Fade right cascade>
-          <div className="cardDetailedText">
+          <div className='cardDetailedText'>
             <div>Apprentissage des techniques de création de site internet par le développement et l’utilisation de CMS (Joomla!).</div>
             <div>Formation Photoshop et montage vidéo (Création d'un clip).</div>
           </div>
         </Fade>
 
-        <Fade right >
-          <div className="cardDetailedText">
+        <Fade right>
+          <div className='cardDetailedText'>
             <div>Cariste, manutentionnaire, plongeur, livreur, ouvrier horticole, moniteur en colonie de vacances</div>
           </div>
         </Fade>
 
         <Fade right cascade>
-          <div className="cardDetailedText">
+          <div className='cardDetailedText'>
             <div>Stages : </div>
             <div>Institut Médico-Educatif et de Rééducation «le Phénix» à Roanne</div>
           </div>
         </Fade>
 
         <Fade right cascade>
-          <div className="cardDetailedText">
+          <div className='cardDetailedText'>
             <div>Stages :</div>
             <div>Centre de rééducation à Karlstad (Suède)</div>
             <div>Centre social «Détente et loisirs» à le Coteau</div>
@@ -92,9 +91,8 @@ const Timeline = () => (
       </Chrono>
 
     </div>
-  </div >
+  </div>
 
 )
 
-export default Timeline;
-
+export default Timeline
