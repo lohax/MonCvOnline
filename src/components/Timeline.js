@@ -19,12 +19,19 @@ const Timeline = () => (
       >
         <Fade right cascade>
           <div className='cardDetailedText'>
+
             <div>Languages et domaines suivis :</div>
-            <div>- React.js, </div>
-            <div>- Vue.js, </div>
-            <div>- Node.js, </div>
-            <div>- les PWA, </div>
-            <div>- la JAMstack et bien plus encore !</div>
+            <div><strong>Langage :</strong> JavaScript ES6 et supérieur</div>
+            <div><strong>Librairies :</strong> ReactJS 16+, VueJs 2/3</div>
+            <div><strong>Framework :</strong> NuxtJs</div>
+            <div><strong>Environnement :</strong> Webpack, Parcel, Snowpack, ViteJs</div>
+            <div><strong>Style :</strong> CSS3, Sass, Tailwindcss, Ant design, Bootstrap, Flexbox, DHTMLX</div>
+            <div><strong>Hébergement :</strong> Github/Git, Netlify, Heroku</div>
+            <div><strong>Backend :</strong> graphQL, SQL, NodeJs, Express, MongoDB, Firebase</div>
+            <div><strong>CMS :</strong> Contentful, Joomla</div>
+            <div><strong>Tests :</strong> Jest</div>
+            <div><strong>Autre :</strong> HTML5, PWA, JAMstack, Gatsby, MERN Stack</div>
+
           </div>
         </Fade>
 

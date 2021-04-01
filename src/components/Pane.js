@@ -54,7 +54,7 @@ class Pane extends Component {
                     <Screenshots data={item.node} />
                   </div>
                 </div>
-                </div>
+              </div>
               : ''
           }
 
@@ -80,9 +80,9 @@ class Pane extends Component {
                     item.node.sitedescription !== null
                       ? item.node.usedSkills.map((item, index) => {
                           return (
-                          <Bounce top cascade>
-                            <Button variant='outline-danger' size='sm' className='btncmptc'>{item}</Button>
-                          </Bounce>
+                            <Bounce top cascade>
+                              <Button variant='outline-danger' size='sm' className='btncmptc'>{item}</Button>
+                            </Bounce>
                           )
                         })
                       : 'Les compétences utilisées seront détaillées prochainement'
@@ -102,7 +102,7 @@ class Pane extends Component {
                     {item.node.url.includes('github') ? <i class='fab fa-github icolink' /> : <i class='fas fa-link icolink' />}  <a href={item.node.url} target='_blank'>{item.node.siteName}</a>
                   </div>
                 </div>
-                </div>
+              </div>
               : ''
           }
 
